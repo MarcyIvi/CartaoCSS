@@ -1,0 +1,208 @@
+body{
+    background-color: #a4b2e6;
+}
+.cartao3D {
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    position: fixed;
+    perspective: 1000px; 
+    margin-left: 300px;
+    margin-right: 250px;
+    
+}
+
+header{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.cartao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; 
+    transform-style: preserve-3d; 
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cartao3D:hover .cartao {
+    transform: rotateY(180deg); 
+}
+
+.frente, .tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+    padding: 50px;
+    box-sizing: border-box; 
+    border: 5px solid #102226;
+    cursor: pointer;
+}
+
+.frente {
+    background: rgb(0,0,0); 
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,10,45,1) 40%, rgba(0,0,107,1) 68%, rgba(17,0,101,1) 75%);
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 70px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    transform: rotateY(0deg); 
+}
+
+.tras {
+    background-color: #000a2d;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+
+    transform: rotateY(180deg); 
+}
+.frente .foto{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    border: 3px solid #0e2024;
+    border-radius: 50%;
+    border-style: groove;
+}
+
+.frente .robot{
+    position: absolute;
+    height: 200px;
+    width: auto;
+
+    margin-top: 160px;
+    margin-left: 520px;
+
+}
+.frente p{
+    position: absolute;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    color: aliceblue; 
+    text-align: start;
+}
+.frente .nome{
+        margin-left: 250px;
+        margin-top: 50px;
+        font-size: 30px;
+        font-style: unset;       
+}
+.frente .profissao{
+        margin-left: 250px;
+        margin-top: 150px;
+        text-align: center;
+        font-size: 15px;
+        font-style: unset;     
+}
+
+.frente .cargo{
+    margin-left: 250px;
+    margin-top: 180px;
+    text-align: center;
+    font-size: 15px;
+    font-style: unset;     
+}
+
+.tras p{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    color: aliceblue; 
+}
+
+.tras .instagram{
+    position: absolute;
+    height: 70px;
+    width: auto;
+
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+.tras p:hover{
+    transform: scale(0.9);
+}
+
+.tras p{
+    transition: transform 0.3s ease;
+}
+.tras .insta{
+    margin-left: 90px;
+    margin-top: 70px;
+
+}
+
+.tras .ImgEmail{
+    position: absolute;
+    height: 70px;
+    width: auto;
+
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+.tras .email{
+    margin-left: 100px;
+    margin-top: 140px;
+}
+
+.tras .Tele{
+    position: absolute;
+    height: 70px;
+    width: auto;
+
+    margin-left: 20px;
+    margin-top: 190px;
+}
+
+.tras .telefone{
+    margin-left: 95px;
+    margin-top: 210px;
+}
+
+.tras .gith{
+    position: absolute;
+    height: 70px;
+    width: auto;
+
+    margin-left: 20px;
+    margin-top: 260px;
+}
+
+.tras .github{
+    margin-left: 95px;
+    margin-top: 280px;
+}
+.tras h2{
+    position: absolute;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 0px;
+    margin-left: 180px;
+   
+}
+
+.tras .robot2{
+    position: absolute;
+    height: 200px;
+    width: auto;
+
+    margin-top: 140px;
+    margin-left: 500px;
+
+}
+
+footer  p{
+    margin-top: 500px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+ 
+}
